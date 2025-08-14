@@ -32,7 +32,7 @@ def char_count(string_data):
 
 def get_text(path):
     try:
-        with open(path, encoding="utf8") as f:
+        with open(path, encoding="utf-8") as f:
             return f.read()
     except FileNotFoundError:
         print(f"Error: File not found at {path}")
